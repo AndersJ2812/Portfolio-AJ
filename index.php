@@ -232,11 +232,13 @@
       </div>
 
       <div class="category_content_box_five">
-        <iframe width="560" height="315" src="<?php echo esc_url($CvVideo['url']); ?>" alt=""></iframe>
+        
+      <iframe width="560" height="315" src="<?php echo esc_url(get_field('cv_video')); ?>" alt=""></iframe>
       </div>
 
       <div class="category_content_box_six">
-        <iframe width="560" height="315" src="<?php echo esc_url($PromoVideo['url']); ?>" alt=""></iframe>
+      <iframe width="560" height="315" src="<?php echo esc_url(get_field('promo_video')); ?>" alt=""></iframe>
+
       </div>
 
     </div>
