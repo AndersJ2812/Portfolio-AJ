@@ -3,7 +3,6 @@
   <?php while (have_posts()): the_post(); ?>
 
 
-
         <?php 
         $heroPicture = get_field("hero_picture");
         $hvemErJeg = get_field("hvem-er-jeg");
@@ -54,33 +53,7 @@
         $BeatMe = get_field("beat_me");
         $CvVideo = get_field("cv_video");
         $PromoVideo = get_field("promo_video");
-
-
-
-
-    
-        ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+?>
 
 <section class="hero">
     <div class="hero-content">
@@ -99,7 +72,6 @@
         <img src="<?php echo esc_url($heroPicture['url']); ?>" alt="Hero Image">
     </div>
   </section>
-
 
   <section class="om-mig" id="om-mig-sektionen">
     <div class="om-mig-inner">
@@ -178,8 +150,6 @@
     </div>
   </section>
 
-
-
   <section class="laering">
     <h2>LÆRING</h2>
     <div class="laering-liste">
@@ -195,7 +165,6 @@
       </div>
   </section>
 
-
   <section class="sprog">
     <h2>SPROG</h2>
     <div class="sprog-liste">
@@ -210,7 +179,6 @@
         <h5><?php echo $EngelskTitel?></h5></h5>
       </div>
   </section>
-
 
   <section class="portfolio" id="portfolio-sektionen">
     <h2>PORTFOLIO</h2>
@@ -270,24 +238,6 @@
       </form>
     </div>
   </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         <?php endwhile?>
     <?php endif?>
