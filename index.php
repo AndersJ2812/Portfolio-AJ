@@ -64,7 +64,10 @@
         <div>
           <a href="<?php echo $LinkedInLink?>" target="_blank" class="linkedin-knap"><?php echo $LinkedIn?></a>
           <a href="<?php echo $GitHubLink?>" target="_blank" class="github-knap"><?php echo $GitHub?></a>
-          <a href="<?php echo $CVLink?>" target="_blank" class="cv-knap"><?php echo $CV?></a>
+          <?php $CVFil = get_field("cv_link"); ?>
+<?php if ($CVFil): ?>
+    <a href="<?php echo esc_url($CVFil['url']); ?>" target="_blank" class="cv-knap"><?php echo $CV; ?></a>
+<?php endif; ?>
         </div>
       </div>
     </div>

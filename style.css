@@ -296,6 +296,7 @@ nav a {
   text-align: center;
   margin-left: 200px;
   margin-top: 30px;
+  max-width: 100%;
 }
 
 .category_content_box_two {
@@ -308,6 +309,7 @@ nav a {
   align-items: center;
   text-align: center;
   margin-left: 40px;
+  max-width: 100%;
 }
 
 .category_content_box_three {
@@ -321,6 +323,7 @@ nav a {
   align-items: center;
   margin-top: 140px;
   margin-left: 140px;
+  max-width: 100%;
 }
 
 .category_content_box_four {
@@ -330,6 +333,7 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 100%;
 }
 
 .category_content_box_four img {
@@ -337,10 +341,12 @@ nav a {
   max-height: 380px;
   margin-top: 50px;
   margin-right: 120px;
+  max-width: 100%;
 }
 .video_container {
   display: flex;
   flex-direction: row;
+  max-width: 100%;
 }
 .category_content_box_five {
   background-color: var(--background-color-light);
@@ -348,12 +354,14 @@ nav a {
   justify-content: center;
   align-items: center;
   margin-top: 100px;
+  max-width: 100%;
 }
 
 .category_content_box_five iframe {
   width: 500px;
   height: 300px;
   margin-top: -30px;
+  max-width: 100%;
 }
 
 .category_content_box_six {
@@ -364,17 +372,20 @@ nav a {
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  max-width: 100%;  
 }
 
 .category_content_box_six iframe {
   width: 500px;
   height: 300px;
   margin-top: -30px;
+  max-width: 100%;
 }
 
 .category_content_box_img {
   max-width: 80%;
   max-height: 80%;
+  max-width: 100%;
 }
 
 .kontakt-sektion {
@@ -385,12 +396,10 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px;
 }
 
 .kontakt-container {
   background-color: #fff;
-  padding: 40px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -427,6 +436,7 @@ label {
   font-size: 0.9em;
   color: #555;
   margin-bottom: 5px;
+  padding-left: 10px;
 }
 
 input[type="text"],
@@ -480,7 +490,7 @@ footer {
   .hero-content {
     width: 100%;
     clip-path: none;
-    padding: 40px 20px;
+    padding: 0;
     text-align: center;
   }
 
@@ -490,7 +500,7 @@ footer {
 
   .hero-image img {
     max-width: 80%;
-    height: auto;
+    height: 350px;
     padding: 40px;
   }
 
@@ -650,7 +660,7 @@ footer {
   }
 
   .portfolio_boxes {
-    display: block !important;
+    display: block;
     width: 100%;
     margin: 0 auto;
   }
@@ -658,20 +668,22 @@ footer {
   .category_content_box_one,
   .category_content_box_two,
   .category_content_box_three,
-  .category_content_box_four {
-    display: block !important;
+  .category_content_box_four,
+  .category_content_box_five,
+  .category_content_box_six {
+    display: block;
+    max-width: 100%;
     width: 100%;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    margin-top: 30px !important;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 30px;
     /* Øg top margin for mere afstand */
-    margin-bottom: 30px !important;
+    margin-bottom: 30px;
     /* Øg bund margin for mere afstand */
-    float: none !important;
+    float: none;
     text-align: center;
     min-height: 100px;
     box-sizing: border-box;
-    padding: 15px;
     border: 1px solid lightgray;
     /* Tilføj en let border for at visuelt adskille dem (kan fjernes) */
   }
@@ -682,11 +694,11 @@ footer {
   .category_content_box_img {
     max-width: 95%;
     height: auto;
-    max-height: 200px;
+    max-height: 175px;
     /* Juster max-højde efter behov */
-    margin-left: auto !important;
-    margin-right: auto !important;
-    margin-top: -5px !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5px;
   }
 
   .category_content_box_four img {
@@ -694,19 +706,19 @@ footer {
     height: auto;
     max-height: 250px;
     /* Juster max-højde efter behov */
-    margin-left: auto !important;
-    margin-right: auto !important;
-    margin-top: 10px !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
   }
 
   .category_content_box_five iframe, 
   .category_content_box_six iframe {
-    display: block !important;
-    max-width: 600px !important;
+    display: block;
+    max-width: 100%;
 
-    margin-left: auto !important;
-    margin-right: auto !important;
-    margin-top: 20px !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
 
   }
 
@@ -715,13 +727,13 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 0;
   }
 
   .kontakt-container {
     background-color: #fff;
-    padding: 40px;
-    border-radius: 8px;
+    padding: 10px;
+    border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     max-width: 600px;
@@ -804,5 +816,6 @@ footer {
     padding: 20px;
     background-color: #333;
     color: #fff;
+    margin-top: 25px;
   }
 }
