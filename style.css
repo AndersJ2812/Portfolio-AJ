@@ -49,7 +49,6 @@ nav a {
 
 .hero-image {
   text-align: left;
-  /* Standard desktop justering */
 }
 
 .hero-image img {
@@ -60,7 +59,6 @@ nav a {
 
 .social-icons {
   text-align: left;
-  /* Standard desktop justering */
   margin-top: 0;
 }
 
@@ -71,7 +69,6 @@ nav a {
 
 .knapper {
   text-align: left;
-  /* Standard desktop justering */
   margin-top: 0;
 }
 
@@ -99,7 +96,6 @@ nav a {
 .cv-knap:hover {
   background-color: #555;
 }
-
 
 .om-mig {
   text-align: center;
@@ -275,7 +271,6 @@ nav a {
   text-align: center;
   padding: 50px 20px;
 }
-
 
 .portfolio_boxes {
   width: var(--width-12col);
@@ -677,15 +672,12 @@ footer {
     margin-left: 0;
     margin-right: 0;
     margin-top: 30px;
-    /* Øg top margin for mere afstand */
     margin-bottom: 30px;
-    /* Øg bund margin for mere afstand */
     float: none;
     text-align: center;
     min-height: 100px;
     box-sizing: border-box;
     border: 1px solid lightgray;
-    /* Tilføj en let border for at visuelt adskille dem (kan fjernes) */
   }
 
   .category_content_box_one img,
@@ -804,10 +796,6 @@ footer {
   .send-knap:hover {
     background-color: #555;
   }
-
-
-
-
 
   /* Footer */
   footer {
