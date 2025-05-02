@@ -142,17 +142,28 @@
 
 <section class="laering">
         <h2>LÆRING</h2>
-        <div class="laering-liste">
-        </div>
         <div class="laering-sub">
+        <?php
+$arguments = array(
+  "post_type"=> "laering",
+  "posts_per_page" => 2, 
+);
+$loop = new WP_Query($arguments);
+?>
+
+<?php if($loop->have_posts()):?>
+  <?php while($loop->have_posts()): $loop->the_post()?> 
+    <?php
+    $læringImage = get_field("laering_billede");
+    $LæringTitle = get_field("laering_title");
+    ?>
           <div class="laering-item">
-            <img src="<?php echo esc_url($VuePicture['url']); ?>" alt="">
-            <h5><?php echo $VueTitel?></h5>
+            <img src="<?php echo esc_url($læringImage['url']); ?>" alt="">
+            <h5><?php echo $LæringTitle?></h5>
           </div>
-          <div class="laering-item">
-            <img src="<?php echo esc_url($WordpressPicture['url']); ?>" alt="">
-            <h5><?php echo $WordpressTitel?></h5>
-          </div>
+          <?php endwhile?>
+        <?php wp_reset_postdata()?>
+        <?php endif?>
         </div>
 </section>
 
